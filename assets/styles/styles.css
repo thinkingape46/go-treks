@@ -12,10 +12,23 @@ body {
     margin: 20px auto 0 auto;
 }
 
-#header-img {
-    width: 100px;
+#image-container {    
     background-color: #70f5a8;
     border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(45deg);
+    width: 100px;
+    height: 100px;
+}
+
+#header-img {
+    width: 100px;
+    // animation: rotate-logo 2s infinite linear;
+}
+
+@keyframes rotate-logo {
+    0% {transform: rotateX(0deg);}
+    100% {transform: rotateX(360deg);}
 }
 
 #nav-bar {
