@@ -1,0 +1,38 @@
+body {
+    font-family: roboto, sans-serif;
+    background-color: #358858;
+    color: #fff;
+    font-weight: 200;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70vw;
+    margin: 20px auto 0 auto;
+}
+
+#header-img {
+    width: 100px;
+    background-color: #70f5a8;
+    border-radius: 50%;
+}
+
+#nav-bar {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.nav-link {
+    flex-basis: 1;
+    color: #fff;
+    margin: auto;
+    text-decoration: none;
+}
+
+#video {
+    display: block;
+    margin: 20px auto 10px auto;
+    width: 60vw;
+    height: 250px;
+}
