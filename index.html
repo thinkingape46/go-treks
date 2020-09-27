@@ -8,44 +8,77 @@
     <title>Product Landing Page</title>
 </head>
 <body>
-    <header id="header" class="container">
-        <div id="image-container">
-            <img src="https://raw.githubusercontent.com/thinkingape46/FreeCodeCamp_product-landing-page/master/assets/images/double-helical.svg" alt="logo which represent a double helical structure" id="header-img">
+    <header id="header">
+        <div id="header_content" class="container">
+            <div id="image-container">
+                <div id="image_background">                    
+                    <a href="#banner"><img src="assets/images/double-helical.svg" alt="logo which represent a double helical structure" id="header-img"></a>
+                </div>
+            </div>
+    
+            <nav id="nav-bar">
+                <a href="#features-div" class="nav-link">Features</a>
+                <a href="#buy" class="nav-link">Buy</a>
+                <a href="#testimonials-div" class="nav-link">Testimonials</a>
+                <a href="#form" class="nav-link">Sign Up</a>
+            </nav>
         </div>
 
-        <nav id="nav-bar">
-            <a href="#buy" class="nav-link">Buy</a>
-            <a href="#testimonials" class="nav-link">Testimonials</a>
-            <a href="#form" class="nav-link">Sign Up</a>
-        </nav>
     </header>
 
-    <main>
+    <main id="main">
+        <div id="banner">
+            <img src="assets/images/painted-stork.jpg" alt="image of the bird painted stork" id="banner-img">
+        </div>
+        
+        <div class="section_heading container">Our Features</div>
+        <section id="features-div" class="container container_three-column">
+            <div class="feature">
+                <p class="feature_heading">Feature # 1</p>
+                <p class="feature_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut, voluptatem sit nesciunt non eos laboriosam eius commodi praesentium eaque doloremque quas accusamus ut vero debitis veritatis, cupiditate aspernatur suscipit.</p>
+            </div>
+            <div class="feature">
+                <p class="feature_heading">Feature # 2</p>
+                <p class="feature_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut, voluptatem sit nesciunt non eos laboriosam eius commodi praesentium eaque doloremque quas accusamus ut vero debitis veritatis, cupiditate aspernatur suscipit.</p>
+            </div>
+            <div class="feature">
+                <p class="feature_heading">Feature # 3</p>
+                <p class="feature_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut, voluptatem sit nesciunt non eos laboriosam eius commodi praesentium eaque doloremque quas accusamus ut vero debitis veritatis, cupiditate aspernatur suscipit.</p>
+            </div>
+        </section>
 
-    <div id="banner" class="container">
-        <img src="assets/images/painted-stork-1.jpg" alt="image of the bird painted stork" id="banner-img">
-    </div>
-    
-    <iframe class="container" id="video" src="https://www.youtube.com/embed/JhAiP93jy2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="section_heading container">Product Video</div>
+        <iframe class="container_video" id="video" src="https://www.youtube.com/embed/JhAiP93jy2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <div id="buy">
 
     </div>
 
-    <div id="testimonials">
-
+    <div class="section_heading container">Our Testimonials</div>
+    <div id="testimonials-div" class="container container_three-column">
+        <div class="testimonial">
+            <p class="testimonial_heading">Testimonial # 1</p>
+            <p class="testimonial_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut, voluptatem sit nesciunt non eos laboriosam eius commodi praesentium eaque doloremque quas accusamus ut vero debitis veritatis, cupiditate aspernatur suscipit.</p>
+        </div>
+        <div class="testimonial">
+            <p class="testimonial_heading">Testimonial # 2</p>
+            <p class="testimonial_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut, voluptatem sit nesciunt non eos laboriosam eius commodi praesentium eaque doloremque quas accusamus ut vero debitis veritatis, cupiditate aspernatur suscipit.</p>
+        </div>
+        <div class="testimonial">
+            <p class="testimonial_heading">Testimonial # 2</p>
+            <p class="testimonial_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut, voluptatem sit nesciunt non eos laboriosam eius commodi praesentium eaque doloremque quas accusamus ut vero debitis veritatis, cupiditate aspernatur suscipit.</p>
+        </div>
     </div>
 
     <div class="container">
         <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form" class="container_form">
             <input type="email" id="email" name="email" placeholder="Please enter your email here">
-            <input type="submit" id="submit">
+            <input type="submit" id="submit" value="Sign Up">
         </form>
     </div>
     
     </main>
-
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </html>
 
 </body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</html>

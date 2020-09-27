@@ -7,24 +7,40 @@ body {
 }
 
 #header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(1, 115, 138, 0.5);
+    height: 70px;
+}
+
+#header_content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 0;
+    font-size: 1.25rem;
+    max-width: 60vw;
+    height: 70px;
 }
 
 .container {
-    max-width: 70vw;
-    margin: 10px auto;
+    max-width: 85vw;
+    margin: 0px auto;
 }
 
-#image-container {    
-    background-color: #adadad;
-    border: 2px solid rgba(0,0,0,0.25);
+#image-container {
+    background: repeating-linear-gradient(rgba(105, 105, 105, 0.5), rgba(255, 255, 255, 0.5), rgba(105, 105, 105, 0.5), rgba(255, 255, 255, 0.5));
     border-radius: 50%;
     overflow: hidden;
     transform: rotate(-45deg);
-    width: 70px;
-    height: 70px;
+    margin: auto auto auto 0;
+    width: 60px;
+    height: 60px;
+}
+
+#image_background {
+    background: repeating-linear-gradient(90deg,rgba(105, 105, 105, 0.5), rgba(255, 255, 255, 0.5), rgba(105, 105, 105, 0.5), rgba(255, 255, 255, 0.5));
 }
 
 #header-img {
@@ -40,10 +56,11 @@ body {
 #nav-bar {
     flex-basis: 60%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-link {
-    color: #000;
+    color: #fff;
     margin: auto;
     text-decoration: none;    
 }
@@ -52,32 +69,63 @@ body {
     outline: 2px solid #15a3bf;
 }
 
-#banner {
-    margin-top: 25px;
-}
-
 #banner-img {
     margin: 0;
     max-width: 100%;
 }
 
+#features-div, #testimonials-div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature, .testimonial {
+    flex-basis: 30%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(1, 115, 138, 0.25);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.feature_heading, .testimonial_heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.feature_content, .testimonial_content {
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.section_heading {
+    margin: 20px auto 10px auto;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+    font-weight: 400;
+}
+
 #video {
     display: block;
-    margin: 20px auto 10px auto;
-    width: 60vw;
-    height: 250px;
+    margin: 0px auto 10px auto;
+    width: 40vw;
+    height: 350px;
 }
 
 .container_form {
     max-width: 50vw;
-    margin: 25px auto 0 auto;
+    margin: 40px auto 40px auto;
     display: flex;
-    height: 40px;
+    height: 50px;
 }
 
 #email {
     flex-basis: 70%;
-    margin-right: 3px;
+    margin-right: 8px;
+    font-size: 1rem;
     outline: none;
     border: 1px solid #15a3bf;
     background-color: rgba(21, 163, 191, 0.1);
@@ -95,11 +143,32 @@ body {
     font-family: roboto;
     background-color: #01738a;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 200;
     border-radius: 2px;
 }
 
 #submit:focus {    
     background-color: #03333d;
+}
+
+@media (max-width: 1000px) {
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #features-div, #testimonials-div {
+        margin-top: 20px;
+        display: block;
+    }
+    #video {        
+     width: 80vw;
+    }
+    .container_form {
+        max-width: 100%;
+        margin: 5px auto 10px auto;
+        height: 50px;
+    }
 }
