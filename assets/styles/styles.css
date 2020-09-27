@@ -1,46 +1,64 @@
 body {
     font-family: roboto, sans-serif;
-    background-color: #358858;
-    color: #fff;
+    background-color: #cacaca;
+    color: #000;
     font-weight: 200;
+    margin: 0;
 }
 
 #header {
     display: flex;
     justify-content: space-between;
+    margin-top: 0;
+}
+
+.container {
     max-width: 70vw;
-    margin: 20px auto 0 auto;
+    margin: 10px auto;
 }
 
 #image-container {    
-    background-color: #70f5a8;
+    background-color: #adadad;
+    border: 2px solid rgba(0,0,0,0.25);
     border-radius: 50%;
     overflow: hidden;
-    transform: rotate(45deg);
-    width: 100px;
-    height: 100px;
+    transform: rotate(-45deg);
+    width: 70px;
+    height: 70px;
 }
 
 #header-img {
-    width: 100px;
-    // animation: rotate-logo 2s infinite linear;
+    width: 100%;
+    animation: rotate-logo 2s infinite linear;
 }
 
 @keyframes rotate-logo {
-    0% {transform: rotateX(0deg);}
-    100% {transform: rotateX(360deg);}
+    0% {transform: rotateY(0deg);}
+    100% {transform: rotateY(360deg);}
 }
 
 #nav-bar {
-    flex-basis: 50%;
+    flex-basis: 60%;
     display: flex;
 }
 
 .nav-link {
-    flex-basis: 1;
-    color: #fff;
+    color: #000;
     margin: auto;
-    text-decoration: none;
+    text-decoration: none;    
+}
+
+.nav-link:focus {
+    outline: 2px solid #15a3bf;
+}
+
+#banner {
+    margin-top: 25px;
+}
+
+#banner-img {
+    margin: 0;
+    max-width: 100%;
 }
 
 #video {
@@ -48,4 +66,40 @@ body {
     margin: 20px auto 10px auto;
     width: 60vw;
     height: 250px;
+}
+
+.container_form {
+    max-width: 50vw;
+    margin: 25px auto 0 auto;
+    display: flex;
+    height: 40px;
+}
+
+#email {
+    flex-basis: 70%;
+    margin-right: 3px;
+    outline: none;
+    border: 1px solid #15a3bf;
+    background-color: rgba(21, 163, 191, 0.1);
+    padding-left: 10px;
+}
+#email:focus {
+    border: 2px solid #15a3bf;
+}
+
+#submit {
+    font-family: roboto, sans-serif;
+    flex-basis: 30%;
+    border: none;
+    outline: none;
+    font-family: roboto;
+    background-color: #01738a;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    border-radius: 2px;
+}
+
+#submit:focus {    
+    background-color: #03333d;
 }

@@ -8,25 +8,44 @@
     <title>Product Landing Page</title>
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="container">
         <div id="image-container">
             <img src="https://raw.githubusercontent.com/thinkingape46/FreeCodeCamp_product-landing-page/master/assets/images/double-helical.svg" alt="logo which represent a double helical structure" id="header-img">
         </div>
 
         <nav id="nav-bar">
-            <a href="#" class="nav-link">Features</a>
-            <a href="#" class="nav-link">Buy</a>
-            <a href="#" class="nav-link">Testimonials</a>
-            <a href="#" class="nav-link">Sign Up</a>
+            <a href="#buy" class="nav-link">Buy</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+            <a href="#form" class="nav-link">Sign Up</a>
         </nav>
     </header>
 
-    <!-- <iframe id="video" src="https://www.youtube.com/embed/JhAiP93jy2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <main>
 
-    <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
-        <input type="email" id="email" placeholder="Please enter your email here">
-        <input type="submit" id="submit">
-    </form>
+    <div id="banner" class="container">
+        <img src="assets/images/painted-stork-1.jpg" alt="image of the bird painted stork" id="banner-img">
+    </div>
+    
+    <iframe class="container" id="video" src="https://www.youtube.com/embed/JhAiP93jy2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div id="buy">
+
+    </div>
+
+    <div id="testimonials">
+
+    </div>
+
+    <div class="container">
+        <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form" class="container_form">
+            <input type="email" id="email" name="email" placeholder="Please enter your email here">
+            <input type="submit" id="submit">
+        </form>
+    </div>
+    
+    </main>
+
+
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
