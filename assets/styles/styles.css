@@ -1,9 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: roboto, sans-serif;
     background-color: #cacaca;
     color: #000;
     font-weight: 200;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 #header {
@@ -11,8 +16,15 @@ body {
     right: 0;
     left: 0;
     top: 0;
-    background-color: rgba(1, 115, 138, 0.5);
     height: 70px;
+}
+
+.header {
+    background-color: rgba(1, 115, 138, 0.5);
+}
+
+.header_dark {
+    background-color: rgba(1, 115, 138, 1);
 }
 
 #header_content {
@@ -25,7 +37,7 @@ body {
 }
 
 .container {
-    max-width: 85vw;
+    max-width: 60vw;
     margin: 0px auto;
 }
 
@@ -54,7 +66,7 @@ body {
 }
 
 #nav-bar {
-    flex-basis: 60%;
+    flex-basis: 50%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -69,9 +81,17 @@ body {
     outline: 2px solid #15a3bf;
 }
 
-#banner-img {
+#picture-id {
     margin: 0;
-    max-width: 100%;
+    padding: 0;
+    border: none;
+}
+
+#banner-img {
+    border-bottom: 10px solid rgb(1, 115, 138);
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 #features-div, #testimonials-div {
@@ -83,9 +103,10 @@ body {
 .feature, .testimonial {
     flex-basis: 30%;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px rgba(1, 115, 138, 0.25);
+    box-shadow: 1px 1px 10px rgba(1, 115, 138, 0.5);
     padding: 15px;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 .feature_heading, .testimonial_heading {
@@ -100,12 +121,19 @@ body {
     font-weight: 200;
 }
 
+.section_padding {
+    padding-top: 70px;
+}
+
 .section_heading {
-    margin: 20px auto 10px auto;
+    margin: 20px 0px;
+    padding: 15px 0px;
     text-align: center;
-    font-size: 2rem;
-    padding-top: 20px;
+    font-size: 1.75rem;
     font-weight: 400;
+    max-width: 100%;
+    background-color: rgba(1, 115, 138, 1);
+    color: #fff;
 }
 
 #video {
@@ -170,5 +198,12 @@ body {
         max-width: 100%;
         margin: 5px auto 10px auto;
         height: 50px;
+    }
+    .container {
+        max-width: 90vw;
+    }
+    .section_heading {
+        max-width: 100%;
+        margin: 20px 0px;
     }
 }

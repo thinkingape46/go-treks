@@ -8,7 +8,7 @@
     <title>Product Landing Page</title>
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="header">
         <div id="header_content" class="container">
             <div id="image-container">
                 <div id="image_background">                    
@@ -17,9 +17,8 @@
             </div>
     
             <nav id="nav-bar">
-                <a href="#features-div" class="nav-link">Features</a>
-                <a href="#buy" class="nav-link">Buy</a>
-                <a href="#testimonials-div" class="nav-link">Testimonials</a>
+                <a href="#section_features" class="nav-link">Features</a>
+                <a href="#section_testimonials" class="nav-link">Testimonials</a>
                 <a href="#form" class="nav-link">Sign Up</a>
             </nav>
         </div>
@@ -28,13 +27,16 @@
 
     <main id="main">
         <div id="banner">
-            <picture>
+            <picture id="picture-id">
                 <source srcset="assets/images/painted-stork-square.jpg" media="(max-width: 600px)">
                 <img src="assets/images/painted-stork-1.jpg" alt="image of the bird painted stork" id="banner-img">
             </picture>
         </div>
         
-        <div class="section_heading container">Our Features</div>
+        <div class="section_padding" id="section_features">
+            <div class="section_heading container">Our Features</div>
+        </div>
+
         <section id="features-div" class="container container_three-column">
             <div class="feature">
                 <p class="feature_heading">Feature # 1</p>
@@ -50,14 +52,13 @@
             </div>
         </section>
 
-        <div class="section_heading container">Product Video</div>
+        <div class="section_heading container" id="section_video">Product Video</div>
         <iframe class="container_video" id="video" src="https://www.youtube.com/embed/JhAiP93jy2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <div id="buy">
-
+    <div class="section_padding" id="section_testimonials">
+        <div class="section_heading container">Our Testimonials</div>
     </div>
 
-    <div class="section_heading container">Our Testimonials</div>
     <div id="testimonials-div" class="container container_three-column">
         <div class="testimonial">
             <p class="testimonial_heading">Testimonial # 1</p>
@@ -81,7 +82,7 @@
     </div>
     
     </main>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    </html>
+    <script src="assets/scripts/scripts.js"></script>
 
 </body>
+</html>
