@@ -72,6 +72,7 @@ body {
 }
 
 .nav-link {
+    padding: 0 10px;
     color: #fff;
     margin: auto;
     text-decoration: none;    
@@ -186,7 +187,16 @@ body {
     }
 }
 
+@media (max-width: 768px) and (min-width: 651px) {
+    #nav-bar {
+    flex-basis: 70%;
+}
+}
+
 @media (max-width: 768px) {
+    #nav-bar {
+    flex-basis: 70%;
+}
     #features-div, #testimonials-div {
         margin-top: 20px;
         display: block;
@@ -206,4 +216,26 @@ body {
         max-width: 100%;
         margin: 20px 0px;
     }
+}
+
+@media (max-width: 650px) {
+    // #header {
+    //     height: 105px;
+    // }
+    // #nav-bar {
+    //     flex-basis: 60%;
+    // }
+    // #header_content {
+    //     display: grid;
+    // }
+    // #image-container {
+    //     margin: 0 auto;
+    //     display: block;
+    //     height: 50px;
+    //     width: 50px;
+    // }
+    // #nav-bar {
+    //     flex-basis: 100%;
+    //     margin: 10px auto;
+    // }
 }
