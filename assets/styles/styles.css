@@ -94,6 +94,8 @@ body {
     margin: 0;
     width: 100%;
     overflow: hidden;
+    height: 100vh;
+    object-fit: cover;
 }
 
 #features-div, #testimonials-div {
@@ -247,6 +249,9 @@ body {
     }
     #nav-bar {
         margin: 5px auto;
+    }
+    #banner-img {
+        height: 50vh;
     }
 }
 
