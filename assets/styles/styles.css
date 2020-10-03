@@ -254,9 +254,3 @@ body {
         height: 50vh;
     }
 }
-
-@media (max-width: 600px) {
-    #header {
-        position: fixed;
-    }
-}
