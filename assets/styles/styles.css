@@ -3,6 +3,13 @@ html {
 }
 
 body {
+    font-family: 'roboto', sans-serif;
+}
+#header, .section_heading {
+    font-family: 'exo 2', sans-serif;
+}
+
+body {
     font-family: roboto, sans-serif;
     background-color: #cacaca;
     color: #000;
@@ -16,67 +23,84 @@ body {
     right: 0;
     left: 0;
     top: 0;
-    height: 70px;
 }
 
 .header {
     background-color: rgba(1, 115, 138, 0.5);
+    height: 75px;
+    transition: all .25s;
 }
 
-.header_dark {
+.header--scrolled {
     background-color: rgba(1, 115, 138, 1);
+    height: 40px;
 }
 
 #header_content {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 1.25rem;
+    font-size: 1rem;
     max-width: 60vw;
-    height: 70px;
+    height: 100%;
 }
 
 .container {
-    max-width: 60vw;
     margin: 0px auto;
 }
 
-#image-container {
-    background: repeating-linear-gradient(rgba(105, 105, 105, 0.5), rgba(255, 255, 255, 0.5), rgba(105, 105, 105, 0.5), rgba(255, 255, 255, 0.5));
-    border-radius: 50%;
-    overflow: hidden;
-    transform: rotate(-45deg);
-    margin: auto auto auto 0;
-    width: 60px;
-    height: 60px;
+#company-section {
+    flex-basis: 40%;
+    display: flex;
 }
 
-#image_background {
-    background: repeating-linear-gradient(90deg,rgba(105, 105, 105, 0.5), rgba(255, 255, 255, 0.5), rgba(105, 105, 105, 0.5), rgba(255, 255, 255, 0.5));
+.logo-container {
+    width: 60px;
+    height: 60px;
+    margin: auto 5px;
+    transition: all .25s;
+}
+.logo-container--scrolled {
+    width: 30px;
+    height: 30px;
 }
 
 #header-img {
+    border-radius: 50%;
+    overflow: hidden;
     width: 100%;
-    animation: rotate-logo 2s infinite linear;
+    height: 100%;
+    transition: all .5s;
 }
 
-@keyframes rotate-logo {
-    0% {transform: rotateY(0deg);}
-    100% {transform: rotateY(360deg);}
+#header-img:hover {
+    transform: rotate(360deg);
+}
+
+#company-title {
+    display: inline-block;
+    margin: auto 5px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.5rem;
 }
 
 #nav-bar {
-    flex-basis: 50%;
+    flex-basis: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .nav-link {
-    padding: 0 10px;
+    padding: 0 15px;
     color: #fff;
     margin: auto;
-    text-decoration: none;    
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.nav-link:hover {
+    font-size: 1.2rem;
 }
 
 .nav-link:focus {
@@ -126,18 +150,17 @@ body {
 }
 
 .section_padding {
-    padding-top: 70px;
+    padding-top: 10px;
 }
 
 .section_heading {
-    margin: 20px 0px;
-    padding: 15px 0px;
+    margin: 0;
+    padding: 50px 0px 15px 0px;
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 400;
     max-width: 100%;
-    background-color: rgba(1, 115, 138, 1);
-    color: #fff;
+    color: rgba(1, 115, 138, 1);
 }
 
 #video {
