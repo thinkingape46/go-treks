@@ -47,7 +47,7 @@ body {
 }
 
 .container {
-    width: 80vw;
+    width: 70vw;
     margin: 0px auto;
 }
 
@@ -128,21 +128,53 @@ body {
     text-align: center;
 }
 
+/* Treks styling section */
+#treks_content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px;
+    gap: 10px 10px;
+    margin: 30px auto 20px auto;
+}
+
+.trek {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px rgba(1, 115, 138, 0.1);
+}
+
+/* features section */
+#features_content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 120px 120px;
+    gap: 10px 10px;
+    margin: 30px auto 20px auto;
+}
+
+/* duplicate? */
 .feature {
     display: flex;
-    height: 150px;
-    width: 75%;
-    margin: 20px auto 10px auto;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px rgba(1, 115, 138, 0.1);
 }
 .feature_icon {
-    flex-basis: 100px;
+    flex-basis: 20%;
     align-self: center;
     position: relative;
     z-index: -1;
-    height: 75px;
+    height: 40px;
 }
 .feature_text {
-    flex-basis: auto;
+    flex-basis: 80%;
+    font-size: 0.9rem;
+    margin: auto;
 }
 
 .img-icon {
@@ -200,13 +232,12 @@ body {
     justify-content: space-around;
 }
 
-.feature, .testimonial {
+.testimonial {
     flex-basis: 30%;
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgba(1, 115, 138, 0.1);
     padding: 15px;
     box-sizing: border-box;
-    margin-bottom: 10px;
 }
 
 .feature_heading, .testimonial_heading {
@@ -281,6 +312,9 @@ body {
     .nav-link {
         font-size: 1rem;
     }
+    .container {
+        width: 80vw;
+    }
 }
 
 @media (max-width: 768px) {
@@ -345,5 +379,13 @@ body {
     }
     #banner-img {
         height: 50vh;
+    }
+    #treks_content {
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 400px;
+    }
+    #features_content {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 120px);
     }
 }
