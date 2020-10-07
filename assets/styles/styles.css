@@ -129,22 +129,77 @@ body {
 }
 
 /* Treks styling section */
+
+.treks {
+    background: linear-gradient(23deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(128, 203, 196, 0.45) 33%, rgba(128, 203, 196, 0.65) 44%, rgba(128, 222, 234, 0.45) 44%,rgba(128, 222, 234, 0.65) 55%, rgba(41, 182, 246, 0.45) 55%, rgba(41, 182, 246, 0.65) 66%, rgba(0,0,0,0) 66%);
+}
+
 #treks_content {
+    width: 70%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 400px;
     gap: 10px 10px;
     margin: 30px auto 20px auto;
 }
 
 .trek {
     display: flex;
+    flex-direction: column;
     margin: auto;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     box-shadow: 1px 1px 10px rgba(1, 115, 138, 0.1);
+    background-color: rgba(1, 115, 138, 0.9);
+    color: #fff;
+    text-align: center;
+}
+
+.trek_text {
+    margin: 10px auto;
+}
+
+.trek_book {
+    background-color: #fff;
+    border: none;
+    height: 40px;
+    width: 115px;
+    margin: 10px auto;
+    outline: none;
+    font-family: 'roboto';
+    position: relative;
+    overflow: hidden;
+}
+
+.button-link {
+    text-decoration: none;
+    color: rgba(1, 115, 138, 1);
+    display: inline-block;
+    width: 100%;
+    line-height: 40px;
+    margin: 0;
+}
+
+.button-effect {
+    position: absolute;
+    width: 108%;
+    text-decoration: none;
+    height: 40px;
+    transform: rotate(-45deg);
+    top: -2px;
+    left: -105%;
+    margin: 0;
+    background: linear-gradient(rgb(255, 255, 255, 0.25), rgb(0, 0, 0, 0.25), rgb(255, 255, 255, 0.25));
+}
+
+.button-effect--active {
+    animation: button-hover .75s forwards;
+}
+
+@keyframes button-hover {
+    0% {left: -114%;}
+    100% {left: 100%;}
 }
 
 /* features section */
@@ -169,7 +224,7 @@ body {
     align-self: center;
     position: relative;
     z-index: -1;
-    height: 40px;
+    height: 60px;
 }
 .feature_text {
     flex-basis: 80%;
@@ -308,6 +363,12 @@ body {
     background-color: #03333d;
 }
 
+@media (max-width: 1300px) {
+    #treks_content {
+        width: 90%;
+    }
+}
+
 @media (max-width: 1000px) {
     .nav-link {
         font-size: 1rem;
@@ -382,10 +443,8 @@ body {
     }
     #treks_content {
         grid-template-columns: 100%;
-        grid-template-rows: 400px 400px;
     }
     #features_content {
         grid-template-columns: 100%;
-        grid-template-rows: repeat(4, 120px);
     }
 }

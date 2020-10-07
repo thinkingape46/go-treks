@@ -11,6 +11,8 @@ let human = document.getElementsByClassName("feature_stay_human");
 let guideFeature = document.getElementsByClassName("feature_guide");
 let guideLeftHand = document.getElementsByClassName("feature_icon_guide-hand-l");
 let guideRightHand = document.getElementsByClassName("feature_icon_guide-hand-r");
+let trekBookButton = document.getElementsByClassName("trek_book");
+let buttonEffect = document.getElementsByClassName("button-effect");
 
 document.addEventListener("scroll", () => {
     if (bannerImage.getBoundingClientRect().top <= -100) {
@@ -53,4 +55,17 @@ guideFeature[0].addEventListener('mouseover', () => {
 guideFeature[0].addEventListener('mouseout', () => {
     guideLeftHand[0].classList.remove("feature_icon_guide-hand-l--wave");
     guideRightHand[0].classList.remove("feature_icon_guide-hand-r--wave");    
+})
+
+trekBookButton[0].addEventListener('mouseover', () => {
+    buttonEffect[0].classList.add("button-effect--active");
+})
+trekBookButton[0].addEventListener('mouseout', () => {
+    buttonEffect[0].classList.remove("button-effect--active");
+})
+trekBookButton[1].addEventListener('mouseover', () => {
+    buttonEffect[1].classList.add("button-effect--active");
+})
+trekBookButton[1].addEventListener('mouseout', () => {
+    buttonEffect[1].classList.remove("button-effect--active");
 })
