@@ -435,7 +435,7 @@ body {
     .nav-bar {
         display: none;
         position: absolute;
-        z-index: 100;
+        z-index: 99;
         top: 40px;
         left: 0;
         right: 0;
@@ -450,11 +450,17 @@ body {
     .nav-bar--show {
         display: flex;
         right: 0;
+        opacity: 0;
+        z-index: 99;
+        animation: reveal-nav-bar 0.5s forwards linear;
     }
-    // @keyframes reveal-nav-bar {
-    //     0% {right: -468px;}
-    //     100% {right: 0;}
-    // }
+    #nav-bar {
+        overflow: hidden;
+    }
+    @keyframes reveal-nav-bar {
+        0% {opacity: 0; transform: scale(1);}
+        100% {opacity: 1; transform: scale(1);}
+    }
 
     .nav-link {
         flex-basis: 100%;
@@ -522,30 +528,6 @@ body {
 }
 
 @media (max-width: 650px) {    
-    #header {
-        // position: static;
-    }
-    .header {        
-        // height: 100px;
-    }
-    .header, .nav-bar {
-        // background-color: rgba(1, 115, 138, 1);
-    }
-    #image-container, .nav-bar {
-        // flex-basis: 100%;
-    }
-    #image-container {
-        // overflow: visible;
-        // height: 50px;
-        // width: 50px;
-        // margin: 30px auto 5px auto;
-    }
-    #image_background {
-        // background: none;
-    }
-    #banner-img {
-        // height: 50vh;
-    }
     #features_content {
         grid-template-columns: 100%;
         grid-template-rows: repeat(4, 120px);
