@@ -138,8 +138,8 @@ body {
 #treks_content {
     width: 70%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 10px 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     margin: 30px auto 20px auto;
 }
 
@@ -206,7 +206,7 @@ body {
 /* features section */
 #features_content {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 120px 120px;
     gap: 10px 10px;
     margin: 30px auto 20px auto;
@@ -217,6 +217,7 @@ body {
     display: flex;
     width: 100%;
     padding: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
     box-sizing: border-box;
     box-shadow: 1px 1px 10px rgba(1, 115, 138, 0.1);
 }
@@ -224,7 +225,7 @@ body {
     flex-basis: 20%;
     align-self: center;
     position: relative;
-    z-index: -1;
+    z-index: 2;
     height: 60px;
 }
 .feature_text {
@@ -381,9 +382,19 @@ body {
         font-size: 1rem;
         padding: 0 10px;
     }
+    #treks_content {
+        width: 85%;
+    }
 }
 
 @media (max-width: 768px) {
+
+    /* Nav-bar experiment */
+
+
+
+    /* Nav-bar experiment */
+
     .header {
         height: 100px;
     }
@@ -403,6 +414,9 @@ body {
         justify-content: center;
         flex-wrap: nowrap;
         max-width: 100%;
+    }
+    #treks_content {
+        grid-template-columns: 100%;
     }
     #features-div, #testimonials-div {
         margin-top: 20px;
@@ -449,10 +463,8 @@ body {
     #banner-img {
         height: 50vh;
     }
-    #treks_content {
-        grid-template-columns: 100%;
-    }
     #features_content {
         grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 120px);
     }
 }
