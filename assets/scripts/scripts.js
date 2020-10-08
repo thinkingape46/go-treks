@@ -1,6 +1,13 @@
 let bannerImage = document.getElementById("banner-img");
 let header = document.getElementById("header");
 let logoContainer = document.getElementById("logo-container");
+
+let hamburgerIcon = document.getElementById("hamburger-icon");
+let topHamburgerBar = document.getElementById("top-bar");
+let middleHamburgerBar = document.getElementById("middle-bar");
+let bottomHamburgerBar = document.getElementById("bottom-bar");
+let navBar = document.querySelectorAll(".nav-bar");
+
 let transportContainer = document.getElementsByClassName("feature_transport");
 let wheel = document.getElementsByClassName("feature_icon_wheel");
 let foodfeature = document.getElementsByClassName("feature_food");
@@ -23,6 +30,13 @@ document.addEventListener("scroll", () => {
         header.classList.remove("header--scrolled");
         logoContainer.classList.remove("logo-container--scrolled");
     }
+})
+
+hamburgerIcon.addEventListener('click', () => {
+    topHamburgerBar.classList.toggle("top-bar--active");
+    middleHamburgerBar.classList.toggle("middle-bar--active");
+    bottomHamburgerBar.classList.toggle("bottom-bar--active");
+    navBar.forEach(el => {el.classList.toggle("nav-bar--show");});
 })
 
 foodfeature[0].addEventListener('mouseover', () => {

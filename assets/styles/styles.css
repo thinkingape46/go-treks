@@ -29,6 +29,7 @@ body {
     background-color: rgba(1, 115, 138, 0.5);
     height: 75px;
     transition: all .25s;
+    z-index: 100;
 }
 
 .header--scrolled {
@@ -84,7 +85,33 @@ body {
     font-size: 1.5rem;
 }
 
-#nav-bar {
+.hamburger-icon {
+    display: none;
+    flex-basis: 46px;
+    align-self: flex-start;
+}
+.hamburger-icon_bar {
+    margin: 5px;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: all .5s ease-out;
+}
+.top-bar {
+    transform: rotate(0deg);
+    transform-origin: 25% 273%;
+}
+.middle-bar {
+    transform: rotate(0deg);
+    transform-origin: 0% 0%;
+}
+.bottom-bar {
+    transform: rotate(0deg);
+    transform-origin: 25% -186%;
+}
+
+.nav-bar {
+    display: none;
     flex-basis: auto;
     display: flex;
     flex-wrap: wrap;
@@ -390,28 +417,84 @@ body {
 @media (max-width: 768px) {
 
     /* Nav-bar experiment */
+    #company-section {
+        flex-basis: auto;
+    }
+    .header {
+        position: relative;
+    }
+    .hamburger-icon {
+        display: flex;
+        align-self: center;
+        cursor: pointer;
+        display: block;
+        margin-right: 5px;
+        display: block;
+        z-index: 105;
+    }
+    .nav-bar {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        top: 40px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: auto 0;
+        transition: all 0.5s;
+        text-align: center;
+        background-color: rgba(1, 115, 138, .85);
+        animation: reveal-nav-bar 0.5s forwards ease-in-out;
+    }
+    .nav-bar--show {
+        display: flex;
+        right: 0;
+    }
+    // @keyframes reveal-nav-bar {
+    //     0% {right: -468px;}
+    //     100% {right: 0;}
+    // }
 
-
+    .nav-link {
+        flex-basis: 100%;
+        z-index: 100;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .top-bar--active {
+        transform: rotate(45deg);
+    }
+    .middle-bar--active {
+        transform: scaleX(0.001) rotate(0deg);
+    }
+    .bottom-bar--active {
+        transform: rotate(-45deg);
+    }
 
     /* Nav-bar experiment */
 
     .header {
-        height: 100px;
+        height: 40px;
     }
     .header--scrolled {
         background-color: rgba(1, 115, 138, 1);
-        height: 100px;
-    }    
-    .logo-container--scrolled {
-        width: 60px;
-        height: 60px;
+        height: 40px;
+    } 
+    #company-section {
+        margin: 5px;
     }
-    #nav-bar {
-        margin: 5px auto;
+    .logo-container {
+        width: 30px;
+        height: 30px;
+    }
+    .logo-container--scrolled {
+        width: 30px;
+        height: 30px;
     }
     #header_content {
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         flex-wrap: nowrap;
         max-width: 100%;
     }
@@ -440,28 +523,28 @@ body {
 
 @media (max-width: 650px) {    
     #header {
-        position: static;
+        // position: static;
     }
     .header {        
-        height: 100px;
+        // height: 100px;
     }
-    .header, #nav-bar {
-        background-color: rgba(1, 115, 138, 1);
+    .header, .nav-bar {
+        // background-color: rgba(1, 115, 138, 1);
     }
-    #image-container, #nav-bar {
-        flex-basis: 100%;
+    #image-container, .nav-bar {
+        // flex-basis: 100%;
     }
     #image-container {
-        overflow: visible;
-        height: 50px;
-        width: 50px;
-        margin: 30px auto 5px auto;
+        // overflow: visible;
+        // height: 50px;
+        // width: 50px;
+        // margin: 30px auto 5px auto;
     }
     #image_background {
-        background: none;
+        // background: none;
     }
     #banner-img {
-        height: 50vh;
+        // height: 50vh;
     }
     #features_content {
         grid-template-columns: 100%;
