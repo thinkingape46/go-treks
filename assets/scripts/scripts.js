@@ -25,10 +25,12 @@ document.addEventListener("scroll", () => {
     if (bannerImage.getBoundingClientRect().top <= -100) {
         header.classList.add("header--scrolled");
         logoContainer.classList.add("logo-container--scrolled");
+        navBar[0].classList.add("nav-bar--scrolled")
     }
     else {
         header.classList.remove("header--scrolled");
         logoContainer.classList.remove("logo-container--scrolled");
+        navBar[0].classList.remove("nav-bar--scrolled")
     }
 })
 

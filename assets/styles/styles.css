@@ -50,6 +50,7 @@ body {
 .container {
     width: 70vw;
     margin: 0px auto;
+    padding: 10px;
 }
 
 #company-section {
@@ -99,7 +100,7 @@ body {
 }
 .top-bar {
     transform: rotate(0deg);
-    transform-origin: 25% 273%;
+    transform-origin: 23% 268%;
 }
 .middle-bar {
     transform: rotate(0deg);
@@ -115,6 +116,7 @@ body {
     flex-basis: auto;
     display: flex;
     flex-wrap: wrap;
+    transition: all .25s;
 }
 
 .nav-link {
@@ -147,7 +149,10 @@ body {
 .text {
     margin: 5px auto;
 }
-
+.text--narrow {
+    /* To reduce the width of text column */
+    width: 75%;
+}
 .text--center {
     text-align: center;
 }
@@ -159,7 +164,7 @@ body {
 }
 
 #treks_content {
-    width: 70%;
+    // width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
@@ -227,6 +232,10 @@ body {
 }
 
 /* features section */
+.features {
+    background: linear-gradient(-17deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(128, 203, 196, 0.45) 33%, rgba(128, 203, 196, 0.65) 44%, rgba(128, 222, 234, 0.45) 44%,rgba(128, 222, 234, 0.65) 55%, rgba(41, 182, 246, 0.45) 55%, rgba(41, 182, 246, 0.65) 66%, rgba(0,0,0,0) 66%);
+}
+
 #features_content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -432,7 +441,7 @@ body {
         display: none;
         position: absolute;
         z-index: 99;
-        top: 40px;
+        top: 80px;
         left: 0;
         right: 0;
         padding: 10px;
@@ -442,6 +451,9 @@ body {
         text-align: center;
         background-color: rgba(1, 115, 138, .85);
         animation: reveal-nav-bar 0.5s forwards ease-in-out;
+    }
+    .nav-bar--scrolled {
+        top: 40px;
     }
     .nav-bar--show {
         display: flex;
