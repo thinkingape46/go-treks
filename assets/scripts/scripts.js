@@ -21,7 +21,8 @@ let guideRightHand = document.getElementsByClassName("feature_icon_guide-hand-r"
 let trekBookButton = document.getElementsByClassName("trek_book");
 let buttonEffect = document.getElementsByClassName("button-effect");
 
-let faqQuestion = document.querySelectorAll(".faq")
+let faqQuestion = document.querySelectorAll(".faq");
+let faqArrow = document.querySelectorAll(".faq_question_img");
 
 document.addEventListener("scroll", () => {
     if (bannerImage.getBoundingClientRect().top <= -100) {
@@ -89,8 +90,8 @@ trekBookButton[1].addEventListener('mouseout', () => {
 })
 
 faqQuestion.forEach(e => {
-    e.addEventListener('click', (e) => {
-        console.log(e.target)
-        console.log(e.target.nextElementSibling.classList.toggle("faq_answer--reveal-answer"));
+    e.addEventListener('click', (el) => {
+        el.currentTarget.children[1].classList.toggle("faq_answer--reveal-answer");
+        console.log(el.currentTarget.children[0].children[1].classList.toggle("faq_question_img--reveal-answer"));
     })
 })
