@@ -315,6 +315,41 @@ body {
     transform: rotate(-32deg);
 }
 
+/* FAQ Section starts */
+
+// .faqs {
+//     background: linear-gradient(-10.5deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(128, 203, 196, 0.45) 33%, rgba(128, 203, 196, 0.65) 44%, rgba(128, 222, 234, 0.45) 44%,rgba(128, 222, 234, 0.65) 55%, rgba(41, 182, 246, 0.45) 55%, rgba(41, 182, 246, 0.65) 66%, rgba(0,0,0,0) 66%);
+// }
+.faqs_content {
+    margin: 20px auto;
+}
+.faq {
+    color: #fff;
+    margin: 2px auto;
+    border-bottom: 1px solid #fff;
+}
+.faq_question {
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: 400;
+    margin: 0;
+    background-color: rgba(1, 115, 138, 0.9);
+}
+.faq_answer {
+    margin: 0 auto;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.4s;
+    font-size: 0.9rem;
+    background-color: rgba(1, 115, 138, 0.8);
+}
+.faq_answer--reveal-answer {
+    padding: 7px 13px;
+    height: max-content;
+}
+
+/* FAQ Section ends */
+
 #features-div, #testimonials-div {
     margin-top: 20px;
     display: flex;
@@ -413,9 +448,6 @@ body {
     .nav-link {
         font-size: 1rem;
         padding: 0 10px;
-    }
-    #treks_content {
-        width: 85%;
     }
 }
 
@@ -529,7 +561,7 @@ body {
         height: 50px;
     }
     .container {
-        max-width: 90vw;
+        width: 90vw;
     }
     .section_heading {
         max-width: 100%;
