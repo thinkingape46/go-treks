@@ -156,6 +156,24 @@ body {
 .text--center {
     text-align: center;
 }
+.text--large {
+    /* meant for sub-heading */
+    font-size: 1.2rem;
+}
+
+/* Section styling */
+/* Common to all sections */
+.section_heading {
+    padding: 40px 0px 15px 0px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgba(1, 115, 138, 1);
+}
+.section_sub-heading {
+    color: rgba(1, 115, 138, 1);
+}
+/* Section styling */
 
 /* Treks styling section */
 
@@ -230,8 +248,8 @@ body {
     0% {left: -114%;}
     100% {left: 100%;}
 }
-
-/* features section */
+/* testimonials section end */
+/* features section start*/
 .features {
     background: linear-gradient(-17deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(128, 203, 196, 0.45) 33%, rgba(128, 203, 196, 0.65) 44%, rgba(128, 222, 234, 0.45) 44%,rgba(128, 222, 234, 0.65) 55%, rgba(41, 182, 246, 0.45) 55%, rgba(41, 182, 246, 0.65) 66%, rgba(0,0,0,0) 66%);
 }
@@ -315,6 +333,8 @@ body {
     transform: rotate(-32deg);
 }
 
+/* features section end*/
+
 /* FAQ Section starts */
 
 // .faqs {
@@ -329,8 +349,6 @@ body {
     color: #fff;
     margin: 2px auto;
     border-bottom: 1px solid #fff;
-    position: relative;
-    z-index: 1000;
 }
 .faq_question {
     padding: 15px 10px;
@@ -344,7 +362,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    z-index: 1;
+    cursor: pointer;
 }
 .faq_question_text {
     margin: 0;
@@ -375,6 +393,21 @@ body {
 
 /* FAQ Section ends */
 
+/* Testimonials Section starts */
+
+.section_testimonials {
+    background: linear-gradient(-17deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(128, 203, 196, 0.45) 33%, rgba(128, 203, 196, 0.65) 44%, rgba(128, 222, 234, 0.45) 44%,rgba(128, 222, 234, 0.65) 55%, rgba(41, 182, 246, 0.45) 55%, rgba(41, 182, 246, 0.65) 66%, rgba(0,0,0,0) 66%);
+}
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1fr;
+}
+.customer-picture {
+    width: 25%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
 #features-div, #testimonials-div {
     margin-top: 20px;
     display: flex;
@@ -389,29 +422,22 @@ body {
     box-sizing: border-box;
 }
 
-.feature_heading, .testimonial_heading {
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-    margin: 10px auto;
-}
+// .feature_heading, .testimonial_heading {
+//     font-size: 1.5rem;
+//     font-weight: 600;
+//     text-align: center;
+//     margin: 10px auto;
+// }
 
-.feature_content, .testimonial_content {
-    font-size: 1.3rem;
-    font-weight: 200;
-}
+// .feature_content, .testimonial_content {
+//     font-size: 1.3rem;
+//     font-weight: 200;
+// }
 
-.section_padding {
-    padding-top: 10px;
-}
+// .section_padding {
+//     padding-top: 10px;
+// }
 
-.section_heading {
-    padding: 40px 0px 15px 0px;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 400;
-    color: rgba(1, 115, 138, 1);
-}
 
 #video {
     display: block;
@@ -456,6 +482,8 @@ body {
 #submit:focus {    
     background-color: #03333d;
 }
+
+/* Start of media queries */
 
 @media (max-width: 1000px) {
     .nav-link {
