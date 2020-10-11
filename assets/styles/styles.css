@@ -217,6 +217,7 @@ body {
     font-family: 'roboto';
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .button-link {
@@ -449,6 +450,7 @@ body {
     }
     .testimonial {
         width: 90%;
+        flex-basis: 260px;
     }
 }
 
