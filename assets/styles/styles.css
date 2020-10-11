@@ -197,8 +197,8 @@ body {
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 1px 1px 10px rgba(1, 115, 138, 0.1);
-    background-color: rgba(1, 115, 138, 0.9);
+    box-shadow: 1px 1px 10px rgba(1, 115, 138, 0.5);
+    background-color: rgba(1, 115, 138, 0.8);
     color: #fff;
     text-align: center;
 }
@@ -396,31 +396,69 @@ body {
 /* Testimonials Section starts */
 
 .section_testimonials {
-    background: linear-gradient(-17deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(128, 203, 196, 0.45) 33%, rgba(128, 203, 196, 0.65) 44%, rgba(128, 222, 234, 0.45) 44%,rgba(128, 222, 234, 0.65) 55%, rgba(41, 182, 246, 0.45) 55%, rgba(41, 182, 246, 0.65) 66%, rgba(0,0,0,0) 66%);
+    background: linear-gradient(-17deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(128, 203, 196, 0.3) 33%, rgba(128, 203, 196, 0.3) 44%, rgba(128, 222, 234, 0.3) 44%,rgba(128, 222, 234, 0.3) 55%, rgba(41, 182, 246, 0.3) 55%, rgba(41, 182, 246, 0.3) 66%, rgba(0,0,0,0) 66%);
 }
 .testimonials {
     display: flex;
     flex-direction: row;
-    flex-basis: 1fr;
+    justify-content: space-around;
+    margin: 30px auto 20px auto; /* gives some space between testimonials and sub-heading */
+}
+.testimonial {
+    flex-basis: 31%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(1, 115, 138, 0.5);
+    padding: 15px;
+    box-sizing: border-box;
 }
 .customer-picture {
-    width: 25%;
+    display: flex;
+    width: 30%;
     border-radius: 50%;
-    margin: 0 auto;
+    margin: auto;
+    background-color: rgba(1, 115, 138, 0.5);
 }
+.customer-name {
+    text-align: center;
+    font-weight: 400;
+    margin: 8px auto 5px auto;
+    font-size: 0.9rem;
+}
+.testimonial-text {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 5px auto;
+}
+@media (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+    }
+    .testimonial {
+        width: 80%;
+        margin: auto auto 20px auto;
+    }
+    .customer-picture {
+        width: 18%;
+        border-radius: 50%;
+    }
+}
+@media (max-width: 500px) {
+    .customer-picture {
+        width: 25%;
+    }
+    .testimonial {
+        width: 90%;
+    }
+}
+
 #features-div, #testimonials-div {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
 }
 
-.testimonial {
-    flex-basis: 30%;
-    border-radius: 5px;
-    box-shadow: 1px 1px 10px rgba(1, 115, 138, 0.1);
-    padding: 15px;
-    box-sizing: border-box;
-}
+
 
 // .feature_heading, .testimonial_heading {
 //     font-size: 1.5rem;
