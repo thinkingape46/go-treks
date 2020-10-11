@@ -118,7 +118,6 @@ body {
     flex-wrap: wrap;
     transition: all .25s;
 }
-
 .nav-link {
     padding: 0 15px;
     color: #fff;
@@ -126,11 +125,75 @@ body {
     text-decoration: none;
     transition: all 0.25s;
 }
-
 .nav-link:focus {
     outline: 2px solid #15a3bf;
 }
-
+#account {
+    padding-top: 0;
+    position: relative;
+}
+#account-head {
+    display: flex;
+}
+@media (max-width: 768px) {
+    #account-head {
+        padding-left: 9px;
+    }
+}
+#account-head_nav-link {
+    flex-basis: 100%;
+    padding-left: 0;
+    padding-right: 5px;
+    border-top: none;
+}
+.account-head_arrow {
+    height: 10px;
+    width: 10px;
+    display: flex;
+    margin: auto 0;
+    transition: all 0.4s;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.account-head_arrow--menu-is-open {
+    transform: rotateX(180deg);
+}
+.account_sub-menu {
+    display: none;
+    font-size: 0.9rem;
+}
+.account_sub-menu--show {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 767px) {
+    .account_sub-menu--show {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 245%;
+        left: -20%;
+        right: -20%;
+        background-color: rgba(1, 115, 138, 0.5);
+        box-shadow: 1px 1px 10px rgba(1, 115, 138, 0.5);
+    }
+    .account_sub-menu--scrolled {
+        top: 155%;
+        background-color: rgba(1, 115, 138, 1);
+    }
+}
+.account_sub-menu_nav-link {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    padding-left: 0;
+}
+@media (max-width: 768px) {
+    .account_sub-menu_nav-link {
+        padding-left: 0;
+    }
+}
 #picture-id {
     margin: 0;
     padding: 0;
@@ -527,7 +590,7 @@ body {
 
 @media (max-width: 1000px) {
     .nav-link {
-        font-size: 1rem;
+        padding: 0 8px;
     }
     .container {
         width: 80vw;
@@ -538,9 +601,8 @@ body {
     #header_content {
         max-width: 90vw;
     }
-    .nav-link {
-        font-size: 1rem;
-        padding: 0 10px;
+    .account_sub-menu_nav-link {
+        padding: 7px;
     }
 }
 

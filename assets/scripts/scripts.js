@@ -2,6 +2,10 @@ let bannerImage = document.getElementById("banner-img");
 let header = document.getElementById("header");
 let logoContainer = document.getElementById("logo-container");
 
+let accountButton = document.getElementById("account_sub-menu_button");
+let accountSubMenu = document.querySelectorAll(".account_sub-menu");
+let navBarAccountMenuArrow = document.getElementById("account_sub-menu_button");
+
 let hamburgerIcon = document.getElementById("hamburger-icon");
 let topHamburgerBar = document.getElementById("top-bar");
 let middleHamburgerBar = document.getElementById("middle-bar");
@@ -24,16 +28,23 @@ let buttonEffect = document.getElementsByClassName("button-effect");
 let faqQuestion = document.querySelectorAll(".faq");
 let faqArrow = document.querySelectorAll(".faq_question_img");
 
+accountButton.addEventListener("click", () => {
+    accountSubMenu.forEach(el => {el.classList.toggle("account_sub-menu--show")});
+    navBarAccountMenuArrow.classList.toggle("account-head_arrow--menu-is-open");
+})
+
 document.addEventListener("scroll", () => {
     if (bannerImage.getBoundingClientRect().top <= -100) {
         header.classList.add("header--scrolled");
         logoContainer.classList.add("logo-container--scrolled");
-        navBar[0].classList.add("nav-bar--scrolled")
+        navBar[0].classList.add("nav-bar--scrolled");
+        accountSubMenu.forEach(el => {el.classList.add("account_sub-menu--scrolled")});
     }
     else {
         header.classList.remove("header--scrolled");
         logoContainer.classList.remove("logo-container--scrolled");
-        navBar[0].classList.remove("nav-bar--scrolled")
+        navBar[0].classList.remove("nav-bar--scrolled");
+        accountSubMenu.forEach(el => {el.classList.remove("account_sub-menu--scrolled")});
     }
 })
 
