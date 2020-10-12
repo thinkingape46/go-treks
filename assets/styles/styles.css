@@ -205,8 +205,13 @@ body {
     margin: 0;
     width: 100%;
     overflow: hidden;
-    height: 100vh;
     object-fit: cover;
+    height: 60vh;
+}
+@media (min-width: 768px) {
+    #banner-img {
+        height: 100vh;
+    }
 }
 
 .text {

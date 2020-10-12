@@ -2,7 +2,7 @@ let bannerImage = document.getElementById("banner-img");
 let header = document.getElementById("header");
 let logoContainer = document.getElementById("logo-container");
 
-let accountButton = document.getElementById("account_sub-menu_button");
+let accountButton = document.getElementById("account-head");
 let accountSubMenu = document.querySelectorAll(".account_sub-menu");
 let navBarAccountMenuArrow = document.getElementById("account_sub-menu_button");
 
@@ -28,7 +28,8 @@ let buttonEffect = document.getElementsByClassName("button-effect");
 let faqQuestion = document.querySelectorAll(".faq");
 let faqArrow = document.querySelectorAll(".faq_question_img");
 
-accountButton.addEventListener("click", () => {
+accountButton.addEventListener("click", (e) => {
+    e.preventDefault();
     accountSubMenu.forEach(el => {el.classList.toggle("account_sub-menu--show")});
     navBarAccountMenuArrow.classList.toggle("account-head_arrow--menu-is-open");
 })

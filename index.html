@@ -46,7 +46,13 @@
 
     <main id="main">
         <div id="banner">
-                <img src="assets/images/banner-image_1440px.jpg" alt="hills in pusphagiri range" id="banner-img">
+            <picture>
+                <source srcset="assets/images/banner-image--L.jpg 1280w, assets/images/banner-image--L.jpg 1440w" media="(min-width: 1280px)">
+                <source srcset="assets/images/banner-image--ML.jpg 800w, assets/images/banner-image--ML.jpg 1000w" media="(min-width: 800px)">
+                <source srcset="assets/images/banner-image--M.jpg 600w, assets/images/banner-image--M.jpg 900w" media="(min-width: 600px)">
+                <source srcset="assets/images/banner-image--S.jpg 400w, assets/images/banner-image--S.jpg 600w" media="(min-width: 400px)">
+                <img src="assets/images/banner-image--S.jpg" alt="hills in pusphagiri range" id="banner-img">
+            </picture>
         </div>
 
         <section class="treks section" id="treks">
