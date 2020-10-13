@@ -2,6 +2,9 @@ let bannerImage = document.getElementById("banner-img");
 let header = document.getElementById("header");
 let logoContainer = document.getElementById("logo-container");
 
+let birdLeftWing = document.querySelectorAll(".bird-lw");
+let birdRightWing = document.querySelectorAll(".bird-rw");
+
 let accountButton = document.getElementById("account-head");
 let accountSubMenu = document.querySelectorAll(".account_sub-menu");
 let navBarAccountMenuArrow = document.getElementById("account_sub-menu_button");
@@ -40,12 +43,16 @@ document.addEventListener("scroll", () => {
         logoContainer.classList.add("logo-container--scrolled");
         navBar[0].classList.add("nav-bar--scrolled");
         accountSubMenu.forEach(el => {el.classList.add("account_sub-menu--scrolled")});
+        birdLeftWing.forEach(e => {e.classList.add("bird-lw--scrolled")});
+        birdRightWing.forEach(e => {e.classList.add("bird-rw--scrolled")});
     }
     else {
         header.classList.remove("header--scrolled");
         logoContainer.classList.remove("logo-container--scrolled");
         navBar[0].classList.remove("nav-bar--scrolled");
         accountSubMenu.forEach(el => {el.classList.remove("account_sub-menu--scrolled")});
+        birdLeftWing.forEach(e => {e.classList.remove("bird-lw--scrolled")});
+        birdRightWing.forEach(e => {e.classList.remove("bird-rw--scrolled")});
     }
 })
 

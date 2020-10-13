@@ -1,6 +1,6 @@
 :root {
     --main-teal: rgba(1, 115, 138, 1);
-    --main-teal-transparent: rgba(1, 115, 138, 1);
+    --main-teal-transparent: rgba(1, 115, 138, 0.5);
 }
 
 html {
@@ -69,11 +69,65 @@ body {
     height: 60px;
     margin: auto 5px;
     transition: all .25s;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
 }
+.birds {
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    top: 15%;
+    left: 40%;
+    animation: flying-bird 10s infinite linear;
+}
+.bird-1 {
+    position: absolute;
+    left: -170%;
+    top: -26%;
+}
+.bird-3 {
+    position: absolute;
+    left: 140%;
+    top: -26%;
+}
+.bird-lw, .bird-rw {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+}
+.bird-lw {
+    animation: flap-lw 1s infinite linear;
+}
+.bird-rw {
+    animation: flap-rw 1s infinite linear;
+}
+.bird-lw--scrolled, .bird-rw--scrolled {
+    height: 5px;
+    height: 5px;
+}
+
+@keyframes flap-lw {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(-30deg);}
+    100% {transform: rotate(0deg);}
+}
+@keyframes flap-rw {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(30deg);}
+    100% {transform: rotate(0deg);}
+}
+@keyframes flying-bird {
+    0% {top: 10%; left: -13%;}
+    50% {top: 30%; left: 40%;}
+    100% {top: 4%; left: 100%;} 
+}
+
 .logo-container--scrolled {
     width: 30px;
     height: 30px;
 }
+
 
 #header-img {
     border-radius: 50%;
@@ -238,7 +292,7 @@ body {
 }
 .banner-text--main {
     color: #fff;
-    text-shadow: 2px 2px 10px rgba(27, 191, 224, 1);
+    text-shadow: 0px 0px 5px var(--main-teal);
     font-size: 1.5rem;
     margin: 7px 0;
     font-weight: 300;
@@ -247,7 +301,7 @@ body {
     font-size: 1rem;
     font-weight: 100;
     margin: 0;
-    text-shadow: 2px 2px 5px rgba(27, 191, 224, 1);
+    text-shadow: 0px 0px 3px var(--main-teal);
 }
 @media (min-width: 650px) {
     .banner-text--main {    
@@ -695,6 +749,7 @@ body {
     margin: 20px auto;
     display: flex;
     height: 50px;
+    transition: all 0.5s;
 }
 #email {
     flex-basis: 70%;
@@ -707,6 +762,7 @@ body {
     border-radius: 3px;
     box-shadow: 0px 0px 10px var(--main-teal);
     padding-left: 10px;
+    transition: all 0.5s;
 }
 #email::placeholder {
     color: var(--main-teal);
@@ -726,6 +782,7 @@ body {
     font-size: 1.1rem;
     font-weight: 200;
     border-radius: 3px;
+    transition: all 2s;
 }
 
 #submit:focus {    
