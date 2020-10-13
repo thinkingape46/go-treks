@@ -275,30 +275,57 @@ body {
 /* Social icons start*/
 .banner-social {
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
 }
 .social-icon {
     cursor: pointer;
-    margin: 15px;
-    height: 50px;
-    width: 50px;
+    margin: 5px 23px;
+    height: 40px;
+    width: 40px;
 }
 @media (max-width: 768px) {
     .social-icon {
-        margin: 10px;
+        margin: 0 18px;
         height: 30px;
         width: 30px;
+    }
+    .banner-social {
+        bottom: 30px;
+    }
+}
+@media (max-width: 650px) {
+    .social-icon {
+        margin: 0 11px;
+        height: 23px;
+        width: 23px;
+    }
+    .banner-social {
+        bottom: 23px;
     }
 }
 @media (max-width: 400px) {
     .social-icon {
-        margin: 2px;
-        height: 25px;
-        width: 25px;
+        margin: 0 8px;
+        height: 20px;
+        width: 20px;
+    }
+    .banner-social {
+        bottom: 20px;
     }
 }
+@media (max-width: 400px) {
+    .social-icon {
+        margin: 0 8px;
+        height: 10px;
+        width: 10px;
+    }
+    .banner-social {
+        bottom: 15px;
+    }
+}
+
 
 /* Social icons end*/
 
@@ -681,7 +708,6 @@ body {
 
 /* Footer social */
 #footer {
-    width: 100vw;
     background-color: rgba(1, 115, 138, 1);
     height: 83px;
     display: flex;
