@@ -662,10 +662,29 @@ body {
 #video {
     display: block;
     margin: 20px auto;
-    width: 40vw;
-    height: 300px;
+    width: 55%;
     box-shadow: 0 0 10px var(--main-teal);
 
+}
+@media (max-width: 1000px) {    
+    #video {
+        width: 65%;
+       }
+}
+@media (max-width: 768px) {    
+    #video {
+        width: 75%;
+       }
+}
+@media (max-width: 650px) {    
+    #video {
+        width: 80%;
+       }
+}
+@media (max-width: 500px) {    
+    #video {
+        width: 95%;
+       }
 }
 /* Video styling ends */
 .section_newsletter {
@@ -888,9 +907,6 @@ body {
     #features-div, #testimonials-div {
         margin-top: 20px;
         display: block;
-    }
-    #video {        
-     width: 80vw;
     }
     .container {
         width: 90vw;

@@ -107,3 +107,15 @@ faqQuestion.forEach(e => {
         console.log(el.currentTarget.children[0].children[1].classList.toggle("faq_question_img--reveal-answer"));
     })
 })
+
+
+// Controlling video container dimensions //
+const videoContainer = document.getElementById("video");
+let videoWidth = videoContainer.clientWidth;
+videoContainer.style.height = `${videoWidth/1.77}px`;
+
+window.addEventListener('resize', () => {
+    const videoContainer = document.getElementById("video");
+    let videoWidth = videoContainer.clientWidth;
+    videoContainer.style.height = `${videoWidth/1.77}px`;
+})
