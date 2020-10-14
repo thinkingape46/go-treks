@@ -723,8 +723,10 @@ body {
     margin: 20px auto;
     width: 55%;
     box-shadow: 0 0 10px var(--main-teal);
-
 }
+// .ytp-title-channel-logo {
+//     background-image: url("assets/images/logo.svg");
+// }
 @media (max-width: 1000px) {    
     #video {
         width: 65%;
@@ -776,6 +778,7 @@ body {
     box-shadow: 0px 0px 20px var(--main-teal);
 }
 #submit {
+    cursor: pointer;
     font-family: roboto, sans-serif;
     flex-basis: 30%;
     border: none;
@@ -819,7 +822,7 @@ body {
     }
 }
 
-/* Footer social */
+/* Footer social start */
 #footer {
     background-color: rgba(1, 115, 138, 1);
     display: flex;
@@ -843,7 +846,7 @@ body {
     padding: 10px 0;
 }
 
-/* Footer social */
+/* Footer social end */
 
 /* Start of media queries */
 

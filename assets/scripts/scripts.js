@@ -126,3 +126,9 @@ window.addEventListener('resize', () => {
     let videoWidth = videoContainer.clientWidth;
     videoContainer.style.height = `${videoWidth/1.77}px`;
 })
+
+
+// Changing YouTube channel logo //
+
+// let YouTubeChannelLogo = videoFrame.contentWindow.document.getElementsByClassName("ytp-title-channel-logo");
+// YouTubeChannelLogo[0].style.backgroundImage = "url('https://thinkingape46.github.io/FreeCodeCamp_product-landing-page/assets/images/logo.svg')";
