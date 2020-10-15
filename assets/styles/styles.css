@@ -724,9 +724,7 @@ body {
     width: 55%;
     box-shadow: 0 0 10px var(--main-teal);
 }
-// .ytp-title-channel-logo {
-//     background-image: url("assets/images/logo.svg");
-// }
+
 @media (max-width: 1000px) {    
     #video {
         width: 65%;

@@ -37,8 +37,13 @@ accountButton.addEventListener("click", (e) => {
     navBarAccountMenuArrow.classList.toggle("account-head_arrow--menu-is-open");
 })
 
-document.addEventListener("scroll", () => {
-    if (bannerImage.getBoundingClientRect().top <= -100) {
+
+document.addEventListener("scroll", () => headerFunc());
+// Can improve the performance of the scroll event, if something like 'throttle' is used //
+
+function headerFunc() {    
+        
+    if (bannerImage.getBoundingClientRect().top <= -100 && !header.classList.contains("header--scrolled")){
         header.classList.add("header--scrolled");
         logoContainer.classList.add("logo-container--scrolled");
         navBar[0].classList.add("nav-bar--scrolled");
@@ -46,7 +51,7 @@ document.addEventListener("scroll", () => {
         birdLeftWing.forEach(e => {e.classList.add("bird-lw--scrolled")});
         birdRightWing.forEach(e => {e.classList.add("bird-rw--scrolled")});
     }
-    else {
+    else if (bannerImage.getBoundingClientRect().top >= -100 && header.classList.contains("header--scrolled")) {
         header.classList.remove("header--scrolled");
         logoContainer.classList.remove("logo-container--scrolled");
         navBar[0].classList.remove("nav-bar--scrolled");
@@ -54,8 +59,9 @@ document.addEventListener("scroll", () => {
         birdLeftWing.forEach(e => {e.classList.remove("bird-lw--scrolled")});
         birdRightWing.forEach(e => {e.classList.remove("bird-rw--scrolled")});
     }
-})
+}
 
+// Taking care of the humburger menu icon for smaller screens.
 hamburgerIcon.addEventListener('click', () => {
     topHamburgerBar.classList.toggle("top-bar--active");
     middleHamburgerBar.classList.toggle("middle-bar--active");
@@ -126,9 +132,3 @@ window.addEventListener('resize', () => {
     let videoWidth = videoContainer.clientWidth;
     videoContainer.style.height = `${videoWidth/1.77}px`;
 })
-
-
-// Changing YouTube channel logo //
-
-// let YouTubeChannelLogo = videoFrame.contentWindow.document.getElementsByClassName("ytp-title-channel-logo");
-// YouTubeChannelLogo[0].style.backgroundImage = "url('https://thinkingape46.github.io/FreeCodeCamp_product-landing-page/assets/images/logo.svg')";
