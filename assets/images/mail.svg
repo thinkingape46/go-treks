@@ -7,35 +7,35 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100mm"
-   height="100mm"
-   viewBox="0 0 100 100"
-   version="1.1"
-   id="svg8"
+   sodipodi:docname="mail.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="mail.svg">
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 100 100"
+   height="100mm"
+   width="100mm">
   <defs
      id="defs2" />
   <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="248.63306"
-     inkscape:cy="353.06495"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1027"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:snap-nodes="false"
      inkscape:window-maximized="1"
-     inkscape:snap-nodes="false" />
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1027"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="353.06495"
+     inkscape:cx="248.63306"
+     inkscape:zoom="0.98994949"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -49,24 +49,24 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:groupmode="layer"
+     inkscape:label="logo 1"
      id="layer1"
-     inkscape:label="logo 1">
+     inkscape:groupmode="layer">
     <path
-       style="fill:#004c5c;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path842"
        d="M 6.1101158,13.800001 94.173495,14.132945 49.8921,56.9161 Z"
-       id="path842" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       style="fill:#004c5c;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path844"
        d="M 99.999995,20.292387 70.534557,50.09077 99.833525,79.722686 Z"
-       id="path844" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       id="path844-9"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 5.0341993e-7,19.567112 29.465442,49.365496 0.166471,78.997413 Z"
-       style="fill:#004c5c;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       id="path844-9" />
     <path
-       style="fill:#004c5c;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path861"
        d="M 35.9085,55.001677 6.5262938,84.966534 94.922625,85.049771 64.291879,55.084913 49.808863,68.985278 Z"
-       id="path861" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
 </svg>
