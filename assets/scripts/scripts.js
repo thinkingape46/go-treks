@@ -132,3 +132,24 @@ window.addEventListener('resize', () => {
     let videoWidth = videoContainer.clientWidth;
     videoContainer.style.height = `${videoWidth/1.77}px`;
 })
+
+
+/*  Scroll to Section start */
+
+let navLinks = document.querySelectorAll(".scroll-to-section");
+let banner = document.getElementById("banner");
+
+navLinks.forEach(el => {
+    el.addEventListener('click', (e) => {
+        let navId = e.target.id;
+        let navToScroll = navId.split("__")[1];
+        let sectionDistance = document.getElementById(navToScroll).getBoundingClientRect().top;
+        let bannerDistance = banner.getBoundingClientRect().top;
+        let headerHeight = header.getBoundingClientRect().height;
+        
+        let scrollDistance = sectionDistance - bannerDistance;
+        window.scrollTo(0, scrollDistance);
+    })
+})
+
+/*  Scroll to Section end */

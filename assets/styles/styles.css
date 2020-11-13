@@ -1,5 +1,5 @@
 :root {
-    --main-teal: rgba(1, 115, 138, 1);
+    --main-teal: rgb(0, 65, 78);
     --main-teal-transparent: rgba(1, 115, 138, 0.5);
 }
 
@@ -17,8 +17,8 @@ body {
 body {
     font-family: roboto, sans-serif;
     background: linear-gradient(45deg,#efe5fd, #f2fde4, #fbe2f0);
-    color: #000;
-    font-weight: 200;
+    color: var(--main-teal);
+    font-weight: 300;
     margin: 0;
     scroll-behavior: smooth;
 }
@@ -30,6 +30,7 @@ body {
     top: 0;
 }
 .header-link {
+    cursor: pointer;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -135,6 +136,7 @@ body {
 
 
 #header-img {
+    pointer-events: none;
     border-radius: 50%;
     overflow: hidden;
     width: 100%;
@@ -182,7 +184,17 @@ body {
     flex-wrap: wrap;
     transition: all .25s;
 }
+
+.nav-bar__ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
 .nav-link {
+    display: inline-block;
+    cursor: pointer;
+    list-style: none;
     padding: 0 15px;
     color: #fff;
     margin: auto;
@@ -236,11 +248,10 @@ body {
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 245%;
+        top: 244%;
         left: -20%;
         right: -20%;
         background-color: rgba(1, 115, 138, 0.5);
-        box-shadow: 1px 1px 10px rgba(1, 115, 138, 0.5);
     }
     .account_sub-menu--scrolled {
         top: 155%;
@@ -422,6 +433,7 @@ body {
     color: #fff;
 }
 .section_sub-heading {
+    font-weight: 300;
     color: rgba(1, 115, 138, 1);
     margin: 10px auto;
 }
@@ -884,6 +896,10 @@ body {
         margin-right: 5px;
         display: block;
         z-index: 105;
+    }   
+    .nav-bar__ul {
+        width: 100%;
+        flex-direction: column;
     }
     .nav-bar {
         display: none;
@@ -921,6 +937,7 @@ body {
     .nav-link {
         flex-basis: 100%;
         z-index: 100;
+        width: 100%;
         padding: 5px;
         box-sizing: border-box;
         border-top: 1px solid #fff;
