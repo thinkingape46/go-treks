@@ -1,291 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" lang="en">
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      lang="en"
+    />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Go Treks</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header" class="header">
-        <div id="header_content">
-            <div id="company-section" href="#banner">
-                <div class="logo-container" id="logo-container">
-                    <div id="nav__banner" class="scroll-to-section header-link">
-                        <img src="assets/images/logo.svg" alt="logo of our company, a silhouette of a person in front of hills" id="header-img">
-                    </div>
-                    <div class="birds">
-                        <div class="bird bird-1">
-                            <img src="assets/images/bird-lw.svg" alt="left wing of the bird" class="bird-lw">
-                            <img src="assets/images/bird-rw.svg" alt="right wing of the bird" class="bird-rw">
-                        </div>
-                        <div class="bird bird-2">
-                            <img src="assets/images/bird-lw.svg" alt="left wing of the bird" class="bird-lw">
-                            <img src="assets/images/bird-rw.svg" alt="right wing of the bird" class="bird-rw">
-                        </div>
-                        <div class="bird bird-3">
-                            <img src="assets/images/bird-lw.svg" alt="left wing of the bird" class="bird-lw">
-                            <img src="assets/images/bird-rw.svg" alt="right wing of the bird" class="bird-rw">
-                        </div>
-                    </div>
-                </div>
-                <div id="company-title">Go Treks</div>
-            </div>            
-
-            <div class="hamburger-icon" id="hamburger-icon">
-                <div class="hamburger-icon_bar top-bar" id="top-bar"></div>
-                <div class="hamburger-icon_bar middle-bar" id="middle-bar"></div>
-                <div class="hamburger-icon_bar bottom-bar" id="bottom-bar"></div>
+      <div id="header_content">
+        <div id="company-section" href="#banner">
+          <div class="logo-container" id="logo-container">
+            <div id="nav__banner" class="scroll-to-section header-link">
+              <img
+                src="assets/images/logo.svg"
+                alt="logo of our company, a silhouette of a person in front of hills"
+                id="header-img"
+              />
             </div>
-                
-            <nav class="nav-bar" id="nav-bar">
-                <ul class="nav-bar__ul">
-                    <li id="nav__treks" class="scroll-to-section nav-link">Treks</li>
-                    <li id="nav__features" class="scroll-to-section nav-link">Features</li>
-                    <li id="nav__faqs" class="scroll-to-section nav-link">FAQ</li>
-                    <li id="nav__testimonials" class="scroll-to-section nav-link">Testimonials</li>
-                    <li id="nav__footer" class="scroll-to-section nav-link">About Us</li>
-                </ul>
-
-                <div id="account" class="nav-link">                    
-                    <div id="account-head">
-                        <a href="#" class="nav-link account-head_nav-link" id="account-head_nav-link">Account</a>
-                        <img id="account_sub-menu_button" src="assets/images/arrow.svg" class="account-head_arrow" alt="image of arrow mark">
-                    </div>
-                    <div class="account_sub-menu">
-                        <a href="#" class="nav-link account_sub-menu_nav-link" id="log-in">Log In</a>
-                        <a href="#" class="nav-link account_sub-menu_nav-link" id="register">Register</a>
-                    </div>
-                </div>
-            </nav>
+            <div class="birds">
+              <div class="bird bird-1">
+                <img
+                  src="assets/images/bird-lw.svg"
+                  alt="left wing of the bird"
+                  class="bird-lw"
+                />
+                <img
+                  src="assets/images/bird-rw.svg"
+                  alt="right wing of the bird"
+                  class="bird-rw"
+                />
+              </div>
+              <div class="bird bird-2">
+                <img
+                  src="assets/images/bird-lw.svg"
+                  alt="left wing of the bird"
+                  class="bird-lw"
+                />
+                <img
+                  src="assets/images/bird-rw.svg"
+                  alt="right wing of the bird"
+                  class="bird-rw"
+                />
+              </div>
+              <div class="bird bird-3">
+                <img
+                  src="assets/images/bird-lw.svg"
+                  alt="left wing of the bird"
+                  class="bird-lw"
+                />
+                <img
+                  src="assets/images/bird-rw.svg"
+                  alt="right wing of the bird"
+                  class="bird-rw"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="company-title">Go Treks</div>
         </div>
+
+        <div class="hamburger-icon" id="hamburger-icon">
+          <div class="hamburger-icon_bar top-bar" id="top-bar"></div>
+          <div class="hamburger-icon_bar middle-bar" id="middle-bar"></div>
+          <div class="hamburger-icon_bar bottom-bar" id="bottom-bar"></div>
+        </div>
+
+        <nav class="nav-bar" id="nav-bar">
+          <ul class="nav-bar__ul">
+            <li id="nav__treks" class="scroll-to-section nav-link">Treks</li>
+            <li id="nav__features" class="scroll-to-section nav-link">
+              Features
+            </li>
+            <li id="nav__faqs" class="scroll-to-section nav-link">FAQ</li>
+            <li id="nav__testimonials" class="scroll-to-section nav-link">
+              Testimonials
+            </li>
+            <li id="nav__footer" class="scroll-to-section nav-link">
+              About Us
+            </li>
+          </ul>
+
+          <div id="account" class="nav-link">
+            <div id="account-head">
+              <a
+                href="#"
+                class="nav-link account-head_nav-link"
+                id="account-head_nav-link"
+                >Account</a
+              >
+              <img
+                id="account_sub-menu_button"
+                src="assets/images/arrow.svg"
+                class="account-head_arrow"
+                alt="image of arrow mark"
+              />
+            </div>
+            <div class="account_sub-menu">
+              <a href="#" class="nav-link account_sub-menu_nav-link" id="log-in"
+                >Log In</a
+              >
+              <a
+                href="#"
+                class="nav-link account_sub-menu_nav-link"
+                id="register"
+                >Register</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main id="main">
-        <div id="banner">
-            <picture>
-                <source srcset="assets/images/banner-image--L.jpg 1280w, assets/images/banner-image--L.jpg 1440w" media="(min-width: 1280px)">
-                <source srcset="assets/images/banner-image--ML.jpg 800w, assets/images/banner-image--ML.jpg 1000w" media="(min-width: 800px)">
-                <source srcset="assets/images/banner-image--M.jpg 600w, assets/images/banner-image--M.jpg 900w" media="(min-width: 600px)">
-                <source srcset="assets/images/banner-image--S.jpg 400w, assets/images/banner-image--S.jpg 600w" media="(min-width: 400px)">
-                <img src="assets/images/banner-image--S.jpg" alt="hills in pusphagiri range" id="banner-img">
-            </picture>
-            <div class="banner-text">
-                <p class="banner-text--main">Ready to wander in the nature?</p>
-                <p class="banner-text--sub">We are here to make it possible.</p>
-            </div>
-            <div class="banner-social">
-                <img src="assets/images/mail.svg" alt="mail icon" class="mail social-icon">
-                <img src="assets/images/facebook.svg" alt="facebook icon" class="facebook social-icon">
-                <img src="assets/images/instagram.svg" alt="instagram icon" class="instagram social-icon">
-                <img src="assets/images/twitter.svg" alt="twitter icon" class="twitter social-icon">
-            </div>
+      <div id="banner">
+        <picture>
+          <source
+            srcset="
+              assets/images/banner-image--L.jpg 1280w,
+              assets/images/banner-image--L.jpg 1440w
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              assets/images/banner-image--ML.jpg  800w,
+              assets/images/banner-image--ML.jpg 1000w
+            "
+            media="(min-width: 800px)"
+          />
+          <source
+            srcset="
+              assets/images/banner-image--M.jpg 600w,
+              assets/images/banner-image--M.jpg 900w
+            "
+            media="(min-width: 600px)"
+          />
+          <source
+            srcset="
+              assets/images/banner-image--S.jpg 400w,
+              assets/images/banner-image--S.jpg 600w
+            "
+            media="(min-width: 400px)"
+          />
+          <img
+            src="assets/images/banner-image--S.jpg"
+            alt="hills in pusphagiri range"
+            id="banner-img"
+          />
+        </picture>
+        <div class="banner-text">
+          <p class="banner-text--main">Static Frontend</p>
+          <p class="banner-text--sub">
+            Static frontend site with HTML, CSS and some JavaScript
+          </p>
         </div>
+        <div class="banner-social">
+          <img
+            src="assets/images/mail.svg"
+            alt="mail icon"
+            class="mail social-icon"
+          />
+          <img
+            src="assets/images/facebook.svg"
+            alt="facebook icon"
+            class="facebook social-icon"
+          />
+          <img
+            src="assets/images/instagram.svg"
+            alt="instagram icon"
+            class="instagram social-icon"
+          />
+          <img
+            src="assets/images/twitter.svg"
+            alt="twitter icon"
+            class="twitter social-icon"
+          />
+        </div>
+      </div>
 
-        <section class="treks section" id="treks">
-            <!-- List of treks we offer currently -->
-            <div class="container">
-             <div class="section_heading">Treks We Offer</div>
-             <div class="section_sub-heading">
-                 <p class="text text--narrow text--large text--center">Our treks takes you to the places you will remember in the years to come. We provide the services that make the whole time of yours trip smooth and enjoyable.</p>
-             </div>
-             <div id="treks_content">
-                 <div class="trek trek-one">
-                     <h3 class="trek_heading">Kumaraparvatha</h3>
-                     <p class="trek_text trek_description">Kumaraparvatha / Pushpagiri is the highest peak in Pushpagiri Wildlife Sanctuary in the Western Ghats.It is located in the northern part of Kodagu district. It is known for one of the hardest in Karnataka.</p>
-  
-                     <p class="trek_text trek_distance">Trek Distance: 18km (ascent and descent)</p>
-  
-                     <p class="trek_text trek_climb">Climb: 800m</p>
-  
-                     <p class="trek_text trek_duration">Trip Duration: 1 day and 2 nights</p>
-  
-                     <button class="trek_book" id="trek-book">
-                        <p class="button-link">Book Now</p>
-                        <div class="button-effect" id="button-effect"></div>
-                     </button>
-                 </div>
-                 <div class="trek trek-two">
-                     <h3 class="trek_heading">Kudremukha</h3>
-                     <p class="trek_text trek_description">Kudremukh is one of the famous peak for trekking located in Chikkamagaluru district, in Karnataka, India. Located around 10 kms from the town of Kalasa is a peak you should not miss in Karnataka.</p>
-  
-                     <p class="trek_text trek_distance">Trek Distance: 22km (ascent and descent)</p>
-  
-                     <p class="trek_text trek_climb">Climb: 1600m</p>
-  
-                     <p class="trek_text trek_duration">Trip Duration: 2 days and 2 nights</p>
-  
-                     <button class="trek_book" id="trek-book">
-                         <p class="button-link">Book Now</p>
-                         <div class="button-effect" id="button-effect"></div>
-                      </button>
-                 </div>
-             </div>
+      <section class="treks section" id="treks">
+        <!-- List of treks we offer currently -->
+        <div class="container">
+          <div class="section_heading">Treks We Offer</div>
+          <div class="section_sub-heading">
+            <p class="text text--narrow text--large text--center">
+              Our treks takes you to the places you will remember in the years
+              to come. We provide the services that make the whole time of yours
+              trip smooth and enjoyable.
+            </p>
+          </div>
+          <div id="treks_content">
+            <div class="trek trek-one">
+              <h3 class="trek_heading">Kumaraparvatha</h3>
+              <p class="trek_text trek_description">
+                Kumaraparvatha / Pushpagiri is the highest peak in Pushpagiri
+                Wildlife Sanctuary in the Western Ghats.It is located in the
+                northern part of Kodagu district. It is known for one of the
+                hardest in Karnataka.
+              </p>
+
+              <p class="trek_text trek_distance">
+                Trek Distance: 18km (ascent and descent)
+              </p>
+
+              <p class="trek_text trek_climb">Climb: 800m</p>
+
+              <p class="trek_text trek_duration">
+                Trip Duration: 1 day and 2 nights
+              </p>
+
+              <button class="trek_book" id="trek-book">
+                <p class="button-link">Book Now</p>
+                <div class="button-effect" id="button-effect"></div>
+              </button>
             </div>
- 
-         </section>
+            <div class="trek trek-two">
+              <h3 class="trek_heading">Kudremukha</h3>
+              <p class="trek_text trek_description">
+                Kudremukh is one of the famous peak for trekking located in
+                Chikkamagaluru district, in Karnataka, India. Located around 10
+                kms from the town of Kalasa is a peak you should not miss in
+                Karnataka.
+              </p>
 
-        <section class="features section" id="features">
-            <div class="container">
-                <!-- Features -->
-                <div class="section_heading">Our Features</div>
-                <div class="section_sub-heading">
-                    <p class="text text--narrow text--center">To make your travel smoother and hassle-free, we have come up several features. Below are some of those.</p>
-                </div>
-                <div id="features_content">
-                    <div class="feature feature_transport">
-                        <div class="feature_icon feature_icon_transport" id=" feature_icon_transport">
-                            <img src="assets/images/car-wheel.svg" alt="motor car wheel" class="feature_icon_wheel img-icon">
-                        </div>
-                        <p class="feature_text">We take care of all the transportation, and you don't need to spend a coin. All you need to do is drop in at our office as per iterenary.</p>
-                    </div>
-                    <div class="feature feature_stay">
-                        <div class="feature_icon feature_icon_stay" id="feature_icon_stay">
-                            <img src="assets/images/human.svg" alt="icon of a human" class="feature_stay_human img-icon">
-                            <img src="assets/images/house.svg" alt="icon of a house" class="feature_stay_house img-icon">
-                        </div>
-                        <p class="feature_text">No need of spending time to search for your stay, we have it covered. We also provide the camping gear depending on the location.</p>
-                    </div>
-                    <div class="feature feature_food">
-                        <div class="feature_icon feature_icon_food" id="feature_icon_food">
-                            <img src="assets/images/fork.svg" alt="icon of a fork" class="feature_icon_fork img-icon">
-                            <img src="assets/images/plate.svg" alt="icon of a plate" class="feature_icon_plate img-icon">
-                            <img src="assets/images/spoon.svg" alt="icon of a spoon" class="feature_icon_spoon img-icon">
-                        </div>
-                        <p class="feature_text">All the meals are covered by us. if your have any specific food choice or on a restrictive diet, please choose the appropriate option while filling the form.</p>
-                    </div>
-                    <div class="feature feature_guide">
-                        <div class="feature_icon feature_icon_guide" id="feature_icon_guide">
-                            <img src="assets/images/safari-guide-body.svg" alt="icon of a human" class="feature_icon_guide-body img-icon">
-                            <img src="assets/images/safari-guide-hand-l.svg" alt="icon of a human hand" class="feature_icon_guide-hand-l img-icon">
-                            <img src="assets/images/safari-guide-hand-r.svg" alt="icon of a human hand" class="feature_icon_guide-hand-r img-icon">
-                        </div>
-                        <p class="feature_text">It's easy to get lost when we roam around a new place, that's we have a team of experienced guides to lead us.</p>
-                    </div>
-                </div>
+              <p class="trek_text trek_distance">
+                Trek Distance: 22km (ascent and descent)
+              </p>
+
+              <p class="trek_text trek_climb">Climb: 1600m</p>
+
+              <p class="trek_text trek_duration">
+                Trip Duration: 2 days and 2 nights
+              </p>
+
+              <button class="trek_book" id="trek-book">
+                <p class="button-link">Book Now</p>
+                <div class="button-effect" id="button-effect"></div>
+              </button>
             </div>
-        </section>      
+          </div>
+        </div>
+      </section>
 
-        <section class="faqs section" id="faqs">
-            <!-- List of treks we offer currently -->
-            <div class="container">
-                <div class="section_heading">Frequently Asked Questions</div>
-                <div class="section_sub-heading">
-                    <p class="text text--narrow text--large text--center">Our answers to the frequently answered questions.</p>
-                </div>
-                <div class="faqs_content" id="faqs_content">
-                    <div class="faq faq-one">
-                        <div class="faq_question">
-                            <p class="faq_question_text">What is your base city?</p>
-                            <img src="assets/images/arrow.svg" alt="" class="faq_question_img">
-                        </div>
-                        <p class="faq_answer">We are based in Bangalore.</p>
-                    </div>
-                    <div class="faq faq-two">
-                        <div class="faq_question">
-                            <p class="faq_question_text">How do I know whether my trip is confirmed?</p>
-                            <img src="assets/images/arrow.svg" alt="" class="faq_question_img">
-                        </div>
-                        <p class="faq_answer">You will find the details under the trip tab in your account section, we also send you a confirmation mail. If any problems, please reach us through phone.</p>
-                    </div>
-                    <div class="faq faq-three">
-                        <div class="faq_question">
-                            <p class="faq_question_text">Can I cancel the order and get a refund?</p>
-                            <img src="assets/images/arrow.svg" alt="" class="faq_question_img">
-                        </div>
-                        <p class="faq_answer">Yes, it is possible. Please do cancel atleast three days before your the trip date. e.g. If the trip starts on 10th, cancel it by 7th.</p>
-                    </div>
-                    <div class="faq faq-four">
-                        <div class="faq_question">
-                            <p class="faq_question_text">What is covered under each order?</p>
-                            <img src="assets/images/arrow.svg" alt="" class="faq_question_img">
-                        </div>
-                        <p class="faq_answer">We cover transport, food, accomodation and any ticket charges.</p>
-                    </div>
-                    <div class="faq faq-five">
-                        <div class="faq_question">
-                            <p class="faq_question_text">Are children allowed?</p>
-                            <img src="assets/images/arrow.svg" alt="" class="faq_question_img">
-                        </div>
-                        <p class="faq_answer">As all our trips involve some kind of physical activity like walking, our trips are suitable for children over 13 years and they should be under the guidance of an adult.</p>
-                    </div>
-                </div>
-             </div> 
-         </section>
-
-         <section class="section section_testimonials" id="testimonials">
-            <div class="container">
-                <div class="section_heading">Testimonials</div>
-                <div class="section_sub-heading">
-                    <p class="text text--narrow text--large text--center">Some of the testimonials given by our valued customers.</p>
-                </div>
-                <div class="testimonials">
-                    <div class="testimonial">
-                        <img src="assets/images/customer-1.svg" alt="picture of our customer" class="customer-picture">
-                        <div class="customer-name">Marie</div>
-                        <div class="testimonial-text">
-                            <p>I have enjoyed the exprerience, really recommend it if you are going with a group or even solo. Most of the things are taken care as I expected.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <img src="assets/images/customer-2.svg" alt="picture of our customer" class="customer-picture">
-                        <div class="customer-name">Space Pirate</div>
-                        <div class="testimonial-text">
-                            <p>The reason I took this package is that, they take us to the location without any hassle. I actually wanted to do it solo, but getting transport is difficult, So I chose this.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <img src="assets/images/customer-3.svg" alt="picture of our customer" class="customer-picture">
-                        <div class="customer-name">Biker</div>
-                        <div class="testimonial-text">
-                            <p>I really enjoyed it and got the chance to meet a bunch of awesome people. I recommend it to anyone who need a bit of help or who are not completely daredevils.</p>
-                        </div>
-                    </div>
-                </div>
-
+      <section class="features section" id="features">
+        <div class="container">
+          <!-- Features -->
+          <div class="section_heading">Our Features</div>
+          <div class="section_sub-heading">
+            <p class="text text--narrow text--center">
+              To make your travel smoother and hassle-free, we have come up
+              several features. Below are some of those.
+            </p>
+          </div>
+          <div id="features_content">
+            <div class="feature feature_transport">
+              <div
+                class="feature_icon feature_icon_transport"
+                id=" feature_icon_transport"
+              >
+                <img
+                  src="assets/images/car-wheel.svg"
+                  alt="motor car wheel"
+                  class="feature_icon_wheel img-icon"
+                />
+              </div>
+              <p class="feature_text">
+                We take care of all the transportation, and you don't need to
+                spend a coin. All you need to do is drop in at our office as per
+                iterenary.
+              </p>
             </div>
-         </section>
-
-        <section class="section section_video">
-            <div class="container">
-                <div class="section_heading container" id="section_video">Product Video</div>
-                <div class="section_sub-heading section_sub-heading_video">
-                    <p class="text text--narrow text--large text--center">Here is an video from one of our latest trip.</p>
-                </div>
-                <iframe class="container_video" id="video" title="kumaraparvatha-trek" src="https://www.youtube.com/embed/OklV_CJefS4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="feature feature_stay">
+              <div
+                class="feature_icon feature_icon_stay"
+                id="feature_icon_stay"
+              >
+                <img
+                  src="assets/images/human.svg"
+                  alt="icon of a human"
+                  class="feature_stay_human img-icon"
+                />
+                <img
+                  src="assets/images/house.svg"
+                  alt="icon of a house"
+                  class="feature_stay_house img-icon"
+                />
+              </div>
+              <p class="feature_text">
+                No need of spending time to search for your stay, we have it
+                covered. We also provide the camping gear depending on the
+                location.
+              </p>
             </div>
-        </section>
-
-        <section class="section section_newsletter">
-            <div class="container">
-                <div class="section_heading">Subscribe to our Newsletter</div>
-                <div class="section_sub-heading section_sub-heading_newsletter">
-                    <p class="text text--narrow text--large text--center">To get our latest updates and offers.</p>
-                </div>
-                <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form" class="container_form">
-                    <input type="email" id="email" autocomplete="off" name="email" placeholder="Please enter your email here">
-                    <input type="submit" id="submit" value="Subscribe">
-                </form>
+            <div class="feature feature_food">
+              <div
+                class="feature_icon feature_icon_food"
+                id="feature_icon_food"
+              >
+                <img
+                  src="assets/images/fork.svg"
+                  alt="icon of a fork"
+                  class="feature_icon_fork img-icon"
+                />
+                <img
+                  src="assets/images/plate.svg"
+                  alt="icon of a plate"
+                  class="feature_icon_plate img-icon"
+                />
+                <img
+                  src="assets/images/spoon.svg"
+                  alt="icon of a spoon"
+                  class="feature_icon_spoon img-icon"
+                />
+              </div>
+              <p class="feature_text">
+                All the meals are covered by us. if your have any specific food
+                choice or on a restrictive diet, please choose the appropriate
+                option while filling the form.
+              </p>
             </div>
-        </section>
+            <div class="feature feature_guide">
+              <div
+                class="feature_icon feature_icon_guide"
+                id="feature_icon_guide"
+              >
+                <img
+                  src="assets/images/safari-guide-body.svg"
+                  alt="icon of a human"
+                  class="feature_icon_guide-body img-icon"
+                />
+                <img
+                  src="assets/images/safari-guide-hand-l.svg"
+                  alt="icon of a human hand"
+                  class="feature_icon_guide-hand-l img-icon"
+                />
+                <img
+                  src="assets/images/safari-guide-hand-r.svg"
+                  alt="icon of a human hand"
+                  class="feature_icon_guide-hand-r img-icon"
+                />
+              </div>
+              <p class="feature_text">
+                It's easy to get lost when we roam around a new place, that's we
+                have a team of experienced guides to lead us.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="faqs section" id="faqs">
+        <!-- List of treks we offer currently -->
+        <div class="container">
+          <div class="section_heading">Frequently Asked Questions</div>
+          <div class="section_sub-heading">
+            <p class="text text--narrow text--large text--center">
+              Our answers to the frequently answered questions.
+            </p>
+          </div>
+          <div class="faqs_content" id="faqs_content">
+            <div class="faq faq-one">
+              <div class="faq_question">
+                <p class="faq_question_text">What is your base city?</p>
+                <img
+                  src="assets/images/arrow.svg"
+                  alt=""
+                  class="faq_question_img"
+                />
+              </div>
+              <p class="faq_answer">We are based in Bangalore.</p>
+            </div>
+            <div class="faq faq-two">
+              <div class="faq_question">
+                <p class="faq_question_text">
+                  How do I know whether my trip is confirmed?
+                </p>
+                <img
+                  src="assets/images/arrow.svg"
+                  alt=""
+                  class="faq_question_img"
+                />
+              </div>
+              <p class="faq_answer">
+                You will find the details under the trip tab in your account
+                section, we also send you a confirmation mail. If any problems,
+                please reach us through phone.
+              </p>
+            </div>
+            <div class="faq faq-three">
+              <div class="faq_question">
+                <p class="faq_question_text">
+                  Can I cancel the order and get a refund?
+                </p>
+                <img
+                  src="assets/images/arrow.svg"
+                  alt=""
+                  class="faq_question_img"
+                />
+              </div>
+              <p class="faq_answer">
+                Yes, it is possible. Please do cancel atleast three days before
+                your the trip date. e.g. If the trip starts on 10th, cancel it
+                by 7th.
+              </p>
+            </div>
+            <div class="faq faq-four">
+              <div class="faq_question">
+                <p class="faq_question_text">
+                  What is covered under each order?
+                </p>
+                <img
+                  src="assets/images/arrow.svg"
+                  alt=""
+                  class="faq_question_img"
+                />
+              </div>
+              <p class="faq_answer">
+                We cover transport, food, accomodation and any ticket charges.
+              </p>
+            </div>
+            <div class="faq faq-five">
+              <div class="faq_question">
+                <p class="faq_question_text">Are children allowed?</p>
+                <img
+                  src="assets/images/arrow.svg"
+                  alt=""
+                  class="faq_question_img"
+                />
+              </div>
+              <p class="faq_answer">
+                As all our trips involve some kind of physical activity like
+                walking, our trips are suitable for children over 13 years and
+                they should be under the guidance of an adult.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_testimonials" id="testimonials">
+        <div class="container">
+          <div class="section_heading">Testimonials</div>
+          <div class="section_sub-heading">
+            <p class="text text--narrow text--large text--center">
+              Some of the testimonials given by our valued customers.
+            </p>
+          </div>
+          <div class="testimonials">
+            <div class="testimonial">
+              <img
+                src="assets/images/customer-1.svg"
+                alt="picture of our customer"
+                class="customer-picture"
+              />
+              <div class="customer-name">Marie</div>
+              <div class="testimonial-text">
+                <p>
+                  I have enjoyed the exprerience, really recommend it if you are
+                  going with a group or even solo. Most of the things are taken
+                  care as I expected.
+                </p>
+              </div>
+            </div>
+            <div class="testimonial">
+              <img
+                src="assets/images/customer-2.svg"
+                alt="picture of our customer"
+                class="customer-picture"
+              />
+              <div class="customer-name">Space Pirate</div>
+              <div class="testimonial-text">
+                <p>
+                  The reason I took this package is that, they take us to the
+                  location without any hassle. I actually wanted to do it solo,
+                  but getting transport is difficult, So I chose this.
+                </p>
+              </div>
+            </div>
+            <div class="testimonial">
+              <img
+                src="assets/images/customer-3.svg"
+                alt="picture of our customer"
+                class="customer-picture"
+              />
+              <div class="customer-name">Biker</div>
+              <div class="testimonial-text">
+                <p>
+                  I really enjoyed it and got the chance to meet a bunch of
+                  awesome people. I recommend it to anyone who need a bit of
+                  help or who are not completely daredevils.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section_video">
+        <div class="container">
+          <div class="section_heading container" id="section_video">
+            Product Video
+          </div>
+          <div class="section_sub-heading section_sub-heading_video">
+            <p class="text text--narrow text--large text--center">
+              Here is an video from one of our latest trip.
+            </p>
+          </div>
+          <iframe
+            class="container_video"
+            id="video"
+            title="kumaraparvatha-trek"
+            src="https://www.youtube.com/embed/OklV_CJefS4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="section section_newsletter">
+        <div class="container">
+          <div class="section_heading">Subscribe to our Newsletter</div>
+          <div class="section_sub-heading section_sub-heading_newsletter">
+            <p class="text text--narrow text--large text--center">
+              To get our latest updates and offers.
+            </p>
+          </div>
+          <form
+            action="https://www.freecodecamp.com/email-submit"
+            method="POST"
+            id="form"
+            class="container_form"
+          >
+            <input
+              type="email"
+              id="email"
+              autocomplete="off"
+              name="email"
+              placeholder="Please enter your email here"
+            />
+            <input type="submit" id="submit" value="Subscribe" />
+          </form>
+        </div>
+      </section>
     </main>
     <footer id="footer">
-        <div class="section_heading section_about-us section_heading--white">About Us</div>
-        <div class="section_sub-heading section_sub-heading--white">
-            <p class="text text--narrow text--large text--center">Go Treks is a team of passionate people who love to mingle with nature and help others with a goal of the same.</p>
-            <p class="text text--small text--narrow text--large text--center disclaimer">Disclaimer: This is a fictional website by &copy; <a class="linkedin-link" href="https://www.linkedin.com/in/jagadeesh59621/" target="_blank">Jagadeesh Kumar</a></p>
-        </div>
-        <div class="footer-social">
-            <img src="assets/images/mail.svg" alt="mail icon" class="mail social-icon social-icon--footer">
-            <img src="assets/images/facebook.svg" alt="facebook icon" class="facebook social-icon social-icon--footer">
-            <img src="assets/images/instagram.svg" alt="instagram icon" class="instagram social-icon social-icon--footer">
-            <img src="assets/images/twitter.svg" alt="twitter icon" class="twitter social-icon social-icon--footer">
-        </div>
+      <div class="section_heading section_about-us section_heading--white">
+        About Us
+      </div>
+      <div class="section_sub-heading section_sub-heading--white">
+        <p class="text text--narrow text--large text--center">
+          Go Treks is a team of passionate people who love to mingle with nature
+          and help others with a goal of the same.
+        </p>
+        <p
+          class="text text--small text--narrow text--large text--center disclaimer"
+        >
+          Disclaimer: This is a fictional website by &copy;
+          <a
+            class="linkedin-link"
+            href="https://www.linkedin.com/in/jagadeesh59621/"
+            target="_blank"
+            >Jagadeesh Kumar</a
+          >
+        </p>
+      </div>
+      <div class="footer-social">
+        <img
+          src="assets/images/mail.svg"
+          alt="mail icon"
+          class="mail social-icon social-icon--footer"
+        />
+        <img
+          src="assets/images/facebook.svg"
+          alt="facebook icon"
+          class="facebook social-icon social-icon--footer"
+        />
+        <img
+          src="assets/images/instagram.svg"
+          alt="instagram icon"
+          class="instagram social-icon social-icon--footer"
+        />
+        <img
+          src="assets/images/twitter.svg"
+          alt="twitter icon"
+          class="twitter social-icon social-icon--footer"
+        />
+      </div>
     </footer>
     <script src="assets/scripts/scripts.js"></script>
-</body>
+  </body>
 </html>
